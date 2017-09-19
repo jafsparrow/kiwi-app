@@ -1,0 +1,21 @@
+
+.main-label {
+    font-size: 32;
+    /* letter-spacing: 0.35; */
+    text-transform: uppercase;
+}
+
+
+TextField {
+    margin-bottom: 10;
+}
+
+.submit-button {
+    margin-top: 15;
+    
+}
+
+.forgot-password-label {
+    font-size: 13;
+    text-transform: uppercase;
+}

@@ -1,0 +1,47 @@
+
+/* 
+.login-container {
+    background-color: purple;
+} */
+
+.background {
+    /* background-image: url("res://background"); */
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+TextField {
+    color: white;
+    placeholder-color: #ACA6A7;
+}
+
+  .main-container {
+    margin-top: 170;
+  }
+
+  .main-label {
+    horizontal-align: center;
+    color: white;
+  }
+
+  .initial-logo {
+    horizontal-align: center;
+    margin-bottom: 10;
+  }
+
+  .submit-button {
+    /* background-color:white;
+    color: black; */
+    margin-top: 20;
+    opacity: 0.4;
+    
+  }
+
+  .forgot-password-label {
+    font-size: 13;
+    margin-left: 20;
+    margin-bottom: 45;
+    color: #ACA6A7;
+  }

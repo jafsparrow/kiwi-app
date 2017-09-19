@@ -1,0 +1,61 @@
+<GridLayout  class="login-container">
+    <GridLayout #background
+        scaleX="1.4"
+        scaleY="1.4"
+        class="background"
+        (loaded)="startBackgroundAnimation(background)"></GridLayout>
+    
+    <StackLayout class="main-container">
+        <Image
+            src="res://logo_login"
+            stretch="none"
+            class="initial-logo"></Image>
+
+        <Label
+            class="main-label"
+            text="Sign In"></Label>
+
+        <GridLayout #formControls
+            class="form-controls"
+            rows="auto, auto"
+            > 
+            <TextField
+                hint="Email Address"
+                keyboardType="email"
+                returnKeyType="next"
+                (returnPress)="focusPassword()"
+                [(ngModel)]="user_name"
+                [isEnabled]="!isAuthenticating"
+                autocorrect="false"
+                autocapitalizationType="none"
+                
+                row="0"></TextField>
+            <TextField #password
+                hint="Password"
+                secure="true"
+                returnKeyType="done"
+                (returnPress)="submit()"
+                [(ngModel)]="_password"
+                [isEnabled]="!isAuthenticating"
+                
+                row="1"></TextField>
+
+            <ActivityIndicator
+                [busy]="isAuthenticating"
+                rowSpan="2"></ActivityIndicator>    
+
+        
+
+        </GridLayout>
+
+        <Button
+            text="Login"
+            class="submit-button"
+            (tap)="submit()"></Button>
+
+        <Label
+            class="forgot-password-label"
+            text="Forgot password?"
+            (tap)="forgotPassword()"></Label>
+    </StackLayout>
+</GridLayout>
