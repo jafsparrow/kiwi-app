@@ -15,7 +15,7 @@ import { ItemDetailComponent } from "./item/item-detail.component";
 import { CustomerListComponent } from './components/customers/customer-list.component';
 import { CustomerDetailComponent } from './components/customers/customer-detail/customer-detail.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
     bootstrap: [
@@ -34,7 +34,8 @@ import { LoginComponent } from './components/login/login.component';
         ItemDetailComponent,
         CustomerListComponent,
         CustomerDetailComponent,
-        LoginComponent
+        LoginComponent,
+        HomeComponent
     ],
     providers: [
         ItemService

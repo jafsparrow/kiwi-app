@@ -1,0 +1,29 @@
+<GridLayout rows="*,*,*" class="landing-container">
+        <GridLayout row="0" class="nav-container m-b-5">
+            <GridLayout class="nav-item font-awesome"
+                [nsRouterLink]="['/customers']">
+                <Label text="&#xf2bc; Customers" 
+                    class="nav-item-text font-awesome"
+                    ></Label>
+    
+                
+            </GridLayout>
+        </GridLayout>
+        
+        
+        <GridLayout row="1" class="nav-container m-b-5">
+            <GridLayout class="nav-item">
+                <Label text="&#xf290; Products" 
+                    class="nav-item-text font-awesome"
+                    [nsRouterLink]="['/products']"></Label>
+            </GridLayout>
+        </GridLayout>
+    
+        <GridLayout row="2" class="nav-container">
+            <GridLayout class="nav-item">
+                <Label text="&#xf1c1; Orders" 
+                    class="nav-item-text font-awesome" [nsRouterLink]="['/summary']"></Label>
+            </GridLayout>
+        </GridLayout>
+    
+    </GridLayout>

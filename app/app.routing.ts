@@ -12,7 +12,7 @@ import { ItemDetailComponent } from "./item/item-detail.component";
 import { CustomerListComponent } from './components/customers/customer-list.component';
 import { CustomerDetailComponent } from './components/customers/customer-detail/customer-detail.component';
 import { LoginComponent } from './components/login/login.component';
-
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
     { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -21,6 +21,7 @@ const routes: Routes = [
     { path: "customers", component: CustomerListComponent },
     { path: "customer/:id", component: CustomerDetailComponent },
     { path: "login", component: LoginComponent },
+    { path: "home", component: HomeComponent },
 
 ];
 

@@ -13,12 +13,18 @@
   }
 
 TextField {
-    color: white;
+    color: #212121;
     placeholder-color: #ACA6A7;
+    background-color: white;
+    opacity: 0.4;
+    
 }
 
   .main-container {
-    margin-top: 170;
+    /* margin-top: 170; */
+    vertical-align: center;
+    padding-right: 10;
+    padding-left: 10;
   }
 
   .main-label {
@@ -32,10 +38,11 @@ TextField {
   }
 
   .submit-button {
-    /* background-color:white;
-    color: black; */
+    background-color:#fec007;
+    color: black;
     margin-top: 20;
-    opacity: 0.4;
+    opacity: 1;
+    padding: 20;
     
   }
 

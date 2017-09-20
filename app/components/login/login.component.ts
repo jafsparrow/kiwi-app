@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from "@angular/router";
 
 // Nativescript imports
 import { Page } from 'ui/page';
@@ -21,7 +22,8 @@ export class LoginComponent {
     _password = "";
    
     isAuthenticating = false;
-    constructor(private page: Page){
+    constructor(private page: Page,
+                private router: Router){
         this.page.actionBarHidden = true;
     }
 
@@ -36,6 +38,7 @@ export class LoginComponent {
 
     submit() {
         this.isAuthenticating = !this.isAuthenticating;
+        this.router.navigate(['/home']);
         
     }
 
