@@ -1,8 +1,30 @@
 <ActionBar title="Customers"
     backgroundColor="purple"
     color="white">
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back"></NavigationButton>
+    
+    <ActionItem android.systemIcon="ic_menu_search"
+       
+        (tap)="searchItem()">
+        <!-- <Label text="&#xf002;"
+            class="fa"></Label> -->
+    </ActionItem>
     
 </ActionBar>
+<StackLayout >
+    <StackLayout  *ngIf="isSearching" backgroundColor="purple" class="p-y-5"
+        #SearchContainer>
+        <SearchBar (clear)="searchClose($event)"
+            (submit)="onSubmit($event)"
+            (textChange)="onChange($event)"
+            backgroundColor="purple"
+            hint="Search Customer"
+            color="white"
+            textFieldHintColor="#bbbbbb"
+            borderColor="#bbbbbb"></SearchBar>
+    </StackLayout>
+
+
 <ListView [items]="customers"
     class="list-group">
     <ng-template let-item="item">
@@ -17,17 +39,24 @@
                 col="1">
                 <Label text="{{item.name}}"
                     class="h3"></Label>
-                <Label text="London srt"
-                    class="h4"></Label>
+                <Label class="hr-dark"></Label>
+                
+                <Label text="&#xf2ba;  London srt, north west -343422"
+                    class="h4 font-weight-normal fa m-t-5"></Label>
+                <Label text="&#xf098;  9854365217"
+                    class="h4 font-weight-normal fa"></Label>
+                
             </StackLayout>
         </GridLayout>
     </ng-template>
 </ListView>
-<FAB (tap)="fabTap()" icon="res://ic_add_white" rippleColor="#ff0000" class="fab-button"
+
+
+</StackLayout>
+<FAB (tap)="fabTap()" icon="res://ic_add_white" rippleColor="#ff0000" class="fab"
     width="70"
     row="1"
     margin="15"
     horizontalAlignment="right"
     verticalAlignment="bottom"
 ></FAB>
-

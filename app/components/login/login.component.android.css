@@ -1,8 +1,9 @@
 
 .main-label {
-    font-size: 32;
+    font-size: 25;
     /* letter-spacing: 0.35; */
     text-transform: uppercase;
+    margin-bottom: 10;
 }
 
 

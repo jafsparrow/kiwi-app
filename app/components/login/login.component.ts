@@ -38,6 +38,11 @@ export class LoginComponent {
 
     submit() {
         this.isAuthenticating = !this.isAuthenticating;
+        setTimeout(function() {
+            console.log('timeout inside');
+            
+        }, 2000);
+        
         this.router.navigate(['/home']);
         
     }
