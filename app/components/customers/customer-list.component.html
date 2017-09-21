@@ -29,7 +29,8 @@
     class="list-group">
     <ng-template let-item="item">
         <GridLayout columns="80,*"
-            class="list-group-item">
+            class="list-group-item"
+            [nsRouterLink]="['/customer']">
             
             <Image src="{{ item.image }}"
                 class="img-thumbnail"

@@ -20,6 +20,7 @@ const routes: Routes = [
     { path: "item/:id", component: ItemDetailComponent },
     { path: "customers", component: CustomerListComponent },
     { path: "customer/:id", component: CustomerDetailComponent },
+    { path: "customer", component: CustomerDetailComponent },
     { path: "login", component: LoginComponent },
     { path: "home", component: HomeComponent },
 

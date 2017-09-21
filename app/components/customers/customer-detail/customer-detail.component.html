@@ -1,0 +1,67 @@
+
+
+    <GridLayout
+        rows="auto,*" >
+
+            <GridLayout 
+                height="40%"
+                row="0"
+                backgroundColor="purple">
+                    <StackLayout orientation="horizontal"
+                        verticalAlignment="center">
+                            <StackLayout
+                                width="30%">
+                                    <Image src="http://www.villard.biz/assets/Uploads/projects/portrait-o.jpg"
+                                    class="img-circle"
+                                    width="90">
+                                    </Image>
+                                </StackLayout>
+                            <StackLayout class="p-l-25"
+                                class="detail-container">
+                                
+                                <Label text="Alexander Arnold"
+                                    class="cust-name"></Label>
+                                <StackLayout orientation="horizontal"
+                                    class="detail-sub-container p-t-5">
+                                    <Label text="&#xf2ba;"
+                                        class="fa"></Label>
+                                    <Label text="House 112 B - Baker Street, Londo 22"
+                                        class="m-l-10"></Label>
+
+                                </StackLayout>
+                                <StackLayout orientation="horizontal"
+                                    class="detail-sub-container p-t-5">
+                                    <Label text="&#xf098;"
+                                        class="fa"></Label>
+
+                                    <Label text="9854365217"
+                                        class="m-l-10"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                    </StackLayout>
+            </GridLayout>
+            <GridLayout 
+                row="1">
+                    <StackLayout>
+                        <StackLayout
+                            class="sub-heading-container">
+                            <Label text="Recent Orders"
+                                class="sub-heading"></Label>
+                        </StackLayout>
+
+                        <ListView [items]="orders"
+                            class="list-group">
+                            <ng-template let-item="item">
+                                <GridLayout columns="*,*,*"
+                                    class="list-group-item">
+                                    <Label text="{{ item.id }}" col="0"></Label>
+                                    <Label text="{{ item.amount }}" col="1"></Label>
+                                    <Label text="{{ item.payment }}" col="2"></Label>
+                                </GridLayout>
+                                </ng-template>
+                        </ListView>
+                    </StackLayout>
+                
+            </GridLayout>
+
+    </GridLayout>

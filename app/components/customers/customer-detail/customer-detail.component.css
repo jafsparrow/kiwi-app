@@ -1,0 +1,26 @@
+.detail-container {
+    color: white;
+}
+
+.cust-name {
+    font-size: 25;
+}
+
+.detail-sub-container {
+    font-size: 15;
+}
+
+.sub-heading-container {
+    height: 40;
+    vertical-align: top;
+    background-color: #EFEFEC;
+    padding: 10;
+    border-width: 1;
+    border-color: yellow;
+}
+
+.sub-heading {
+    horizontal-align: center;
+    font-size: 15;
+
+}
